@@ -1,0 +1,213 @@
+/* General styles */
+html {
+  background: #1f232c;
+}
+
+h1 {
+  font-family: sans-serif;
+  color: #03e9f4;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+/* Header section */
+.container0 {
+  background-color: #090a0d;
+  display: flex;
+  height: 60px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+}
+
+.first {
+  font-size: 20px;
+  border: solid 0.2em #03e9f4;
+  display: inline-block;
+  position: relative;
+  border-radius: 2.5em;
+}
+
+.first input[type=text] {
+  font-family: inherit;
+  font-weight: bold;
+  width: 2.5em;
+  height: 2.5em;
+  padding: 0.3em 2.1em 0.3em 0.4em;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 2.5em;
+  transition: width 800ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 150ms;
+}
+
+.first input[type=text]:focus {
+  outline: none;
+}
+
+.first input[type=text]:focus,
+.search-box input[type=text]:not(:placeholder-shown) {
+  width: 18em;
+  transition: width 800ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.first input[type=text]:focus + button[type=reset],
+.search-box input[type=text]:not(:placeholder-shown) + button[type=reset] {
+  transform: rotate(-45deg) translateY(0);
+  transition: transform 150ms ease-out 800ms;
+}
+
+.first input[type=text]:focus + button[type=reset]:after,
+.first input[type=text]:not(:placeholder-shown) + button[type=reset]:after {
+  opacity: 1;
+  transition: top 150ms ease-out 950ms, right 150ms ease-out 950ms, opacity 150ms ease 950ms;
+}
+
+.first button[type=reset] {
+  background-color: transparent;
+  width: 1.4em;
+  height: 1.4em;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0.55em;
+  right: 0.55em;
+  transform: rotate(-45deg) translateY(2.2em);
+  transition: transform 150ms ease-out 150ms;
+}
+
+.first button[type=reset]:before,
+.search-box button[type=reset]:after {
+  content: "";
+  background-color: #03e9f4;
+  width: 0.3em;
+  height: 1.4em;
+  position: absolute;
+}
+
+.first button[type=reset]:after {
+  transform: rotate(90deg);
+  opacity: 0;
+  transition: transform 150ms ease-out, opacity 150ms ease-out;
+}
+
+.last {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  margin: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #03e9f4;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+}
+
+/* Navigation section */
+.container1 {
+  background-color: #323744;
+  display: flex;
+  height: 60px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.btn1 {
+  margin: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+}
+
+.container1 ul li a:hover {
+  top: -10px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 18px;
+  border-bottom: 1px solid #03e9f4;
+}
+
+/* locations section */
+.container2 {
+  background-color: transparent;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn2 {
+  margin: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  width:23% ;
+  height: 200px;
+  background: transparent;
+  border-radius: 10px;
+  justify-content: center;
+  border: 0px;
+  display: inline-block;
+  background: linear-gradient(180deg,rgba(0,27,65,.65) 0,rgba(0,27,65,0));
+  text-shadow: 1px 1px 1px var(--bui_color_black);
+}
+
+
+.btn2 img {
+  width:100%;
+  height: 200px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 10px;
+}
+button.btn2.Cairo{
+  display: inline-flex;
+  width: 45%;
+  align-items: center;
+  justify-content: center;
+  margin-right: 90px;
+}
+button.btn2.Alexandria{
+  display: inline-flex;
+  width: 45%;
+  align-items: center;
+  justify-content: center;
+}
